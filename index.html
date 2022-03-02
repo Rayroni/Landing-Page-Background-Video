@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Nunca Desista Landing Page</title>
+</head>
+<body>
+   <section class="showcase ">
+       <header>
+           <h2 class="logo">Codifique</h2>  <!--Logo superior e sua classe-->
+           <div class="toggle "></div>
+       </header>
+       <video src="https://res.cloudinary.com/duolc1w3h/video/upload/v1646185556/production_ID_4709302_tqltkj.mp4" muted loop autoplay></video>   <!--Video de Background-->
+      <div class="overlay"></div> 
+      <div class="text">
+          <h2>Nunca Desista</h2>  <!--Titulo h2-->
+          <h3>Dos Seus Sonhos e do que ama</h3>  <!--titulo h3-->
+          <p>O que você faria se soubesse que seus sonhos se tornarão realidade? Se não houvesse risco de falha? Liberte sua mente e pense em todas as infinitas possibilidades que a vida nos dá. Não se limite enquanto estiver sonhando. Quando comecei a escrever meus sonhos, achava que meus sonhos eram grandes demais. Achei que eram impossíveis. Mas você sabe o que? Nada é impossível.
+            Não se limite pelo que você pensa ou pelo que as outras pessoas pensam.</p>
+            <a href="#">Acredite</a>
+         </div>
+         <ul class="social">   <!--Criação de classe e adiação de icones-->
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>  
+         </ul>
+   </section>
+    <div class="menu">
+        <ul> <!--criando lista não ordenada-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+
+    </div>      <!--parte de JavaScript e toda interação-->
+    <script>       
+        const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      }) 
+    </script>
+</body>
+</html>
